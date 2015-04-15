@@ -22,5 +22,5 @@ ClassLoader::addNamespaces(array
 ClassLoader::addClasses(array
 (
 	// Classes
-    'postYou\HImageModel' => '/system/modules/headline-image/classes/HImageModel.php',
+    'postyou\HImageModel' => '/system/modules/headline-image/classes/HImageModel.php',
 ));
