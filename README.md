@@ -8,7 +8,7 @@ usage:
 
 "require": {
 
-        "postyou/headline-image": "dev-master"
+        "postyou/headline-image": "~1.0"
 },
 
 
@@ -17,6 +17,6 @@ usage:
         {
         
             "type": "vcs",
-            "url": "https://github.com/garyee/contao-headline-image"
+            "url": "https://github.com/postyou/contao-headline-image"
         }
 ],
