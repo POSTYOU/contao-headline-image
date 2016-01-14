@@ -20,11 +20,9 @@ class HImageModel extends \ContentModel
 
     function modifyElement($objElement, $strBuffer)
     {
-//        echo "<pre>";
-//        var_dump($objElement->arrData);
-//        echo "</pre>";
-
-
+     if($objElement->arrData["type"]=="alias" && $objElement->arrData["cteAlias"]>0){
+			       return \Controller::getContentElement($objElement->arrData["cteAlias"]);
+		      }
         $insertStr = "";
         if ($objElement->arrData["addHeadLineImage"] == '1') {
 
