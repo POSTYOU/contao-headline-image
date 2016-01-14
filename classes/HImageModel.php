@@ -40,7 +40,7 @@ class HImageModel extends \ContentModel
                 return $strBuffer;
             }
             $openTagPos = strpos($strBuffer, "<h");
-            if ($openTagPos != 0 && !empty($insertStr)) {
+            if ($openTagPos!==false && !empty($insertStr)) {
                 $openTagPos = strpos($strBuffer, ">", $openTagPos) + 1;
                 $strBuffer = substr($strBuffer, 0, $openTagPos) . $insertStr . substr($strBuffer, $openTagPos);
 
